@@ -1,0 +1,84 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Item Image -->
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/item_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder" />
+
+        <!-- Item Name -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Item Description -->
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Description"
+            android:textColor="@color/on_background"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Item Price -->
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Item Stock -->
+        <TextView
+            android:id="@+id/itemStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Add to Cart Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addToCartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/on_primary"
+            android:cornerRadius="16dp"
+            app:icon="@drawable/ic_add_cart"
+            app:iconTint="@color/on_primary"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="12dp" />
+    </LinearLayout>
+</ScrollView>

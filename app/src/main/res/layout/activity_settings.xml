@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <Switch
+        android:id="@+id/darkModeSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:textSize="18sp"
+        android:textColor="@color/on_background"
+        android:layout_marginBottom="24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="@color/error"
+        android:textColor="@color/on_error" />
+</LinearLayout>
